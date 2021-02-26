@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bylemov">
-        <activity android:name=".Pagar"></activity>
+        <activity android:name=".Carrito"></activity>
+        <activity android:name=".Pagar" />
         <activity android:name=".Moviles" />
         <activity android:name=".MainActivity">
             <intent-filter>

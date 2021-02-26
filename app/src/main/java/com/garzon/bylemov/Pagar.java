@@ -3,6 +3,7 @@ package com.garzon.bylemov;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class Pagar extends AppCompatActivity {
         TextView tv1 = findViewById(R.id.tv1);
         Button btnFecha = findViewById(R.id.btnFecha);
         Button btnHora = findViewById(R.id.btnHora);
+        Button btnConfirmar = findViewById(R.id.btnConfirmar);
 
         Bundle parametros = this.getIntent().getExtras();
         if(parametros !=null){
@@ -38,6 +40,14 @@ public class Pagar extends AppCompatActivity {
             public void onClick(View v) {
                 DialogFragment newFragment = new TimePickerFragment();
                 newFragment.show(getSupportFragmentManager(), "timePicker");
+            }
+        });
+
+        btnConfirmar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(this, carrito.class);
+                startActivity(intent);
             }
         });
 
