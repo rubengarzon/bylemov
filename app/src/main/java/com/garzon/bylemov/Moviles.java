@@ -7,6 +7,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ActionMode;
 import android.view.Menu;
@@ -58,7 +59,14 @@ public class Moviles extends AppCompatActivity{
 
                 builder.setPositiveButton(R.string.fire, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        // User clicked OK button
+                        // Create the text message with a string
+                        Intent sendIntent = new Intent(Moviles.this, Pagar.class);
+                        sendIntent.putExtra("movil", moviles.get(position));
+                        sendIntent.setType("text/plain");
+
+                        if (sendIntent.resolveActivity(getPackageManager()) != null) {
+                            startActivity(sendIntent);
+                        }
                     }
                 });
                 builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
