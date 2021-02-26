@@ -4,14 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121"
-    tools:context=".Moviles">
+    tools:context=".pagar">
 
-    <ListView
-        android:id="@+id/listaMoviles"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="192dp"
-/>
 </androidx.constraintlayout.widget.ConstraintLayout>

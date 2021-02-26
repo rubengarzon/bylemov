@@ -18,10 +18,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onClick(View v) {
-        intentMoviles(v);
+        intentMovilesActivity(v);
     }
 
-    public void intentMoviles(View view) {
+    public void intentMovilesActivity(View view) {
         Intent intent = new Intent(this, Moviles.class);
         startActivity(intent);
     }

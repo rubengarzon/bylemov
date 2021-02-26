@@ -3,4 +3,7 @@
     <string name="logotipo">Logotipo principal</string>
     <string name="iniciar">Iniciar</string>
     <string name="nombre">Rubén Garzón Zafra</string>
+    <string name="fire">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="dialogo_comprar">Comprar Móvil</string>
 </resources>
