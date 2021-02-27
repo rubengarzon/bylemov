@@ -1,6 +1,7 @@
 package com.garzon.bylemov;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuBuilder;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,8 +31,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-
         getMenuInflater().inflate(R.menu.principal, menu);
+        if(menu instanceof MenuBuilder){
+            MenuBuilder m = (MenuBuilder) menu;
+            m.setOptionalIconsVisible(true);
+        }
         return true;
     }
 
@@ -39,11 +43,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.encuesta:
-                Intent intent = new Intent(this, Valoracion.class);
-                startActivity(intent);
-                return true;
             case R.id.action_atencion:
+                Intent intent2 = new Intent(this, AtencionAlCliente.class);
+                startActivity(intent2);
+                return true;
+            case R.id.action_valoracion:
                 Intent intent = new Intent(this, Valoracion.class);
                 startActivity(intent);
                 return true;
