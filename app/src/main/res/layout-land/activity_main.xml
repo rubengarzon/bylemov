@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageMain"
         android:layout_width="307dp"
         android:layout_height="374dp"
         android:layout_marginStart="54dp"
@@ -20,7 +20,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/logotipo" />
+        app:srcCompat="@mipmap/logotipo"
+        android:contentDescription="@string/imagenMain" />
 
     <Button
         android:id="@+id/btnIniciar"
@@ -49,7 +50,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageMain"
         app:layout_constraintStart_toStartOf="parent" />
 
 

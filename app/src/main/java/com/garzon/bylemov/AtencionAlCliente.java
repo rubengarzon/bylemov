@@ -23,12 +23,21 @@ public class AtencionAlCliente extends AppCompatActivity {
         setContentView(R.layout.activity_atencion_al_cliente);
 
         EditText editText = findViewById(R.id.etPhone);
+        Button btnLlamar = findViewById(R.id.btnLlamar);
 
-        if (editText != null)
+        btnLlamar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                    dialNumber();
+            }
+        });
+
+        /*if (editText != null)
             // If view is found, set the listener for editText.
             editText.setOnEditorActionListener(
                     new TextView.OnEditorActionListener() {
-                        /**
+                        *//**
                          * Responds to the pressed key and calls a method to dial
                          * the phone number.
                          * @param textView  The view that was clicked.
@@ -36,7 +45,7 @@ public class AtencionAlCliente extends AppCompatActivity {
                          * @param keyEvent  If triggered by an Enter key, this is the
                          *                  event.
                          * @return          True, the key was entered, or false.
-                         */
+                         *//*
                         @Override
                         public boolean onEditorAction(
                                 TextView textView, int actionId, KeyEvent keyEvent) {
@@ -46,13 +55,9 @@ public class AtencionAlCliente extends AppCompatActivity {
                             // If the action for the keyboard is defined as
                             // IME_ACTION_SEND (android:imeOptions="actionSend" in the
                             // layout), call the dialNumber method and return true.
-                            if (actionId == EditorInfo.IME_ACTION_SEND) {
-                                dialNumber();
-                                handled = true;
-                            }
-                            return handled;
+
                         }
-                    });
+                    });*/
 
     }
 

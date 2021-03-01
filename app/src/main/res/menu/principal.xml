@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.garzon.bylemov.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-            <item android:icon="@mipmap/carrito" android:id="@+id/action_atencion"
-                android:title="Atencion al cliente"
+    <item
+        android:id="@+id/btnMore"
+        android:icon="@drawable/ic_more"
+        android:title="Más"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/btnSupport"
+                android:icon="@drawable/ic_support"
+                android:title="Soporte"
                 />
-            <item android:id="@+id/action_valoracion"
-                android:icon="@mipmap/valoracion"
-                android:title="Valoración de la app"
+            <item
+                android:id="@+id/btnRate"
+                android:icon="@drawable/ic_rate"
+                android:title="Valorar app"
                 />
+        </menu>
+
+    </item>
 </menu>

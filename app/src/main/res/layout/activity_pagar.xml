@@ -25,13 +25,14 @@
         android:layout_marginTop="80dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="Correo Electronico"
+        android:hint="@string/correo_electronico"
         android:inputType="textEmailAddress"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextPhone"
@@ -40,11 +41,12 @@
         android:layout_marginTop="50dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="Número de Móvil"
+        android:hint="@string/n_mero_de_m_vil"
         android:inputType="phone"
         android:textColorHint="#FFFFFF"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnFecha"
@@ -52,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="Selecciona una fecha"
+        android:text="@string/selecciona_una_fecha"
         app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
         app:layout_constraintStart_toStartOf="@+id/editTextPhone"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
@@ -63,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:gravity="center"
-        android:text="Selecciona una hora"
+        android:text="@string/selecciona_una_hora"
         app:layout_constraintStart_toStartOf="@+id/btnFecha"
         app:layout_constraintTop_toBottomOf="@+id/btnFecha" />
 
@@ -74,7 +76,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:text="Confirmar"
+        android:text="@string/confirmar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnHora" />
 </androidx.constraintlayout.widget.ConstraintLayout>

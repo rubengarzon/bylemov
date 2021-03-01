@@ -6,4 +6,23 @@
     <string name="fire">Aceptar</string>
     <string name="cancel">Cancelar</string>
     <string name="dialogo_comprar">Comprar Móvil</string>
+    <string name="imagenMain">logotipo</string>
+    <string name="textPrueba">TextView</string>
+    <string name="textPruebaPrecio">TextView</string>
+    <string name="imagen">TODO</string>
+    <string name="completa">Completa</string>
+    <string name="mejorable">Mejorable</string>
+    <string name="valorar_la_aplicaci_n">Valorar la aplicación</string>
+    <string name="te_gusta_la_aplicaci_n">¿Te gusta la aplicación?</string>
+    <string name="valorar">Valorar</string>
+    <string name="es_f_cil_de_usar">¿Es fácil de usar?</string>
+    <string name="que_m_vil_te_gustar_a_a_adir_en_la_tienda">¿Que móvil te gustaría añadir en la tienda?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="m_viles_en_venta">Móviles en venta</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="n_mero_de_m_vil">Número de Móvil</string>
+    <string name="selecciona_una_fecha">Selecciona una fecha</string>
+    <string name="selecciona_una_hora">Selecciona una hora</string>
+    <string name="confirmar">Confirmar</string>
 </resources>

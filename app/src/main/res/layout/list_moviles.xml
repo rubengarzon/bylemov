@@ -4,13 +4,15 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="80dp">
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_margin="25dp"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
+        android:contentDescription="@string/imagen"
+        app:srcCompat="@android:drawable/ic_menu_call" />
 
     <TextView
         android:id="@+id/modelo"
@@ -18,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_weight="1"
-        android:text="TextView"
+        android:text="@string/textPrueba"
         android:textColor="#FFFFFF" />
 
     <TextView
@@ -27,6 +29,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_weight="1"
-        android:text="TextView"
+        android:text="@string/textPruebaPrecio"
         android:textColor="#FFFFFF" />
 </LinearLayout>

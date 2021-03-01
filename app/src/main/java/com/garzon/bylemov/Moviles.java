@@ -92,7 +92,7 @@ public class Moviles extends AppCompatActivity{
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.menu_carro:
-                        Toast.makeText(Moviles.this, "aaaaaaa", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Moviles.this, Carrito.class)
                         ;
                         mode.finish();
                         return true;
